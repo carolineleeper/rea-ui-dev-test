@@ -1,12 +1,11 @@
 import Property from "./Property";
 import style from "./Results.module.css";
-import { results } from "../data.json";
 
-const Results = () => {
+const Results = (props) => {
   return (
     <div className={style.resultsContainer}>
       <h1>Results</h1>
-      {results.map((result) => {
+      {props.results.map((result) => {
         return (
           <Property
             key={result.id}

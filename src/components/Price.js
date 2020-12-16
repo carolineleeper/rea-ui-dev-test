@@ -1,6 +1,8 @@
+import style from "./Price.module.css";
+
 const Price = (props) => {
   return (
-    <div>
+    <div className={style.priceContainer}>
       <p>{props.price}</p>
     </div>
   );

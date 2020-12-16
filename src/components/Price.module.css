@@ -1,0 +1,12 @@
+.priceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.priceContainer p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem;
+}

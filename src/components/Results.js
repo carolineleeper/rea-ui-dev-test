@@ -5,14 +5,14 @@ const Results = (props) => {
   return (
     <div className={style.resultsContainer}>
       <h1>Results</h1>
-      {props.results.map((result) => {
+      {props.results.map((property) => {
         return (
           <Property
-            key={result.id}
-            color={result.agency.brandingColors.primary}
-            agencyLogo={result.agency.logo}
-            mainImage={result.mainImage}
-            price={result.price}
+            key={property.id}
+            color={property.agency.brandingColors.primary}
+            agencyLogo={property.agency.logo}
+            mainImage={property.mainImage}
+            price={property.price}
           />
         );
       })}

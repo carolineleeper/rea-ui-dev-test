@@ -13,6 +13,7 @@ const Property = (props) => {
       <AddButton
         handleClick={props.handleClick}
         propertyId={props.propertyId}
+        category={props.category}
       />
     </div>
   );

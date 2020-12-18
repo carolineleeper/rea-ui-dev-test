@@ -8,40 +8,31 @@ function App() {
   const [newSaved, setNewSaved] = useState(saved);
 
   const handleClick = (propertyID) => {
-    const clickedProperty = results.find(
-      (property) => property.id === propertyID
-    );
+    if (newSaved.find((property) => property.id === propertyID)) {
+      const clickedProperty = newSaved.find(
+        (property) => property.id === propertyID
+      );
 
-    if (clickedProperty) {
+      setNewSaved(
+        newSaved.filter((property) => {
+          return clickedProperty !== property;
+        })
+      );
+    } else if (results.find((property) => property.id === propertyID)) {
+      const clickedProperty = results.find(
+        (property) => property.id === propertyID
+      );
+
       setNewSaved([...newSaved, clickedProperty]);
     }
   };
-
-  // useEffect(() => {
-  //   if (propertyID !== undefined) {
-  //     // find property in results array
-  //     const newProperty = results.filter(
-  //       (property) => property.id === propertyID
-  //     );
-
-  //     // if it's already in saved array remove it
-  //     // if (newSaved.some((property) => property.id === propertyID)) {
-  //     //   setNewSaved((newSaved) => [...newSaved, ...newProperty]);
-  //     // }
-
-  //     // if it's not in the saved array add it
-  //     if (!newSaved.some((property) => property.id === propertyID)) {
-  //       setNewSaved((newSaved) => [...newSaved, ...newProperty]);
-  //     }
-  //   }
-  // }, [propertyID, newSaved]);
 
   const data = { results, newSaved };
 
   return (
     <div className="App">
-      <Results data={data} handleClick={handleClick} />
-      <SavedProperties data={data} handleClick={handleClick} />
+      <Results data={data.results} handleClick={handleClick} />
+      <SavedProperties data={data.newSaved} handleClick={handleClick} />
     </div>
   );
 }

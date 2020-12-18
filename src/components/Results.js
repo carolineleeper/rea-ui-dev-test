@@ -5,7 +5,7 @@ const Results = (props) => {
   return (
     <div className={style.resultsContainer}>
       <h1>Results</h1>
-      {props.data.results.map((property) => {
+      {props.data.map((property) => {
         return (
           <Property
             key={property.id}
@@ -15,6 +15,7 @@ const Results = (props) => {
             mainImage={property.mainImage}
             price={property.price}
             handleClick={props.handleClick}
+            category="result"
           />
         );
       })}

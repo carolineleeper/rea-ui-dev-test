@@ -5,7 +5,7 @@ const SavedProperties = (props) => {
   return (
     <div className={style.resultsContainer}>
       <h1>Saved Properties</h1>
-      {props.data.newSaved.map((property) => {
+      {props.data.map((property) => {
         return (
           <Property
             key={property.id}
@@ -15,6 +15,7 @@ const SavedProperties = (props) => {
             mainImage={property.mainImage}
             price={property.price}
             handleClick={props.handleClick}
+            category="saved"
           />
         );
       })}

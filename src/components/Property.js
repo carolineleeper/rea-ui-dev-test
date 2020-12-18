@@ -1,6 +1,7 @@
 import Agency from "./Agency";
 import MainImage from "./MainImage";
 import Price from "./Price";
+import AddButton from "./AddButton";
 import style from "./Property.module.css";
 
 const Property = (props) => {
@@ -9,6 +10,10 @@ const Property = (props) => {
       <Agency color={props.color} logo={props.agencyLogo} />
       <MainImage mainImage={props.mainImage} />
       <Price price={props.price} />
+      <AddButton
+        handleClick={props.handleClick}
+        propertyId={props.propertyId}
+      />
     </div>
   );
 };

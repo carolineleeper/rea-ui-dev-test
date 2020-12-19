@@ -1,3 +1,7 @@
+.hiddenPropertyButton {
+  opacity: 0;
+}
+
 .propertyButton {
   display: inline-block;
   border: none;
@@ -12,6 +16,8 @@
   transition: all 0.2s ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  animation: fadein 5s ease-in-out;
 }
 .propertyButton:hover,
 .propertyButton:focus {
@@ -31,4 +37,20 @@
   background-color: #acacac;
   color: #757575;
   cursor: not-allowed;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  10%,
+  100% {
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1.05);
+  }
+  14% {
+    transform: scale(1);
+  }
 }

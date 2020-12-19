@@ -2,18 +2,19 @@ import style from "./Button.module.css";
 import { useState } from "react";
 
 const Button = (props) => {
-  const [isDisabled, setIsDisabled] = useState(false);
+  const [category, setCategory] = useState(props.category);
 
   return (
     <button
-      className={style.propertyButton}
-      disabled={isDisabled}
+      className={
+        props.showButton ? style.propertyButton : style.hiddenPropertyButton
+      }
       onClick={() => {
-        setIsDisabled(true);
+        category === "saved" ? setCategory("result") : setCategory("saved");
         props.handleClick(props.propertyId);
       }}
     >
-      {props.category === "saved" ? "Remove Property" : "Add Property"}
+      {category === "saved" ? "Remove" : "Add"}
     </button>
   );
 };

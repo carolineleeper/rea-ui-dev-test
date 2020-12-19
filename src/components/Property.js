@@ -22,13 +22,19 @@ const Property = (props) => {
       <MainImage mainImage={property.mainImage} />
       <div className={style.priceContainer}>
         <Price price={property.price} />
-        {showButton && (
+        {/* {showButton && (
           <Button
             handleClick={props.handleClick}
             propertyId={property.id}
             category={props.category}
           />
-        )}
+        )} */}
+        <Button
+          handleClick={props.handleClick}
+          propertyId={property.id}
+          category={props.category}
+          showButton={showButton}
+        />
       </div>
     </div>
   );

@@ -38,3 +38,10 @@ function App() {
 }
 
 export default App;
+
+// Jon's list of cool to dos because he loves you
+// rename your variables
+// break up the two responsibilities in that handleClick function
+// just pass down `results` and `newSaved` as props - don't construct new object
+// implicit return cos they are cool
+// make <Results /> and <SavedProperties /> the same component - pass down `title` and `category`

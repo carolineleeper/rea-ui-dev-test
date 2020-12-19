@@ -20,3 +20,6 @@ const Property = (props) => {
 };
 
 export default Property;
+
+// destructure `property` from props, when you have a property prop
+// multiple levels over and over again is bad

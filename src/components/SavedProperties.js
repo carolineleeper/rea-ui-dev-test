@@ -24,3 +24,6 @@ const SavedProperties = (props) => {
 };
 
 export default SavedProperties;
+
+// implicit returns
+// pass down a full property prop, rather than each bit individually

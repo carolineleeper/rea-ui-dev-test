@@ -24,3 +24,6 @@ const Results = (props) => {
 };
 
 export default Results;
+
+// implicit returns
+// pass down a full property prop, rather than each bit individually

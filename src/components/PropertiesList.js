@@ -1,10 +1,10 @@
 import Property from "./Property";
-import style from "./Results.module.css";
+import style from "./PropertiesList.module.css";
 
-const Results = (props) => {
+const PropertiesList = (props) => {
   return (
-    <div className={style.resultsContainer}>
-      <h1>Results</h1>
+    <div className={style.propertiesContainer}>
+      <h1>{props.title}</h1>
       {props.data.map((property) => {
         return (
           <Property
@@ -15,7 +15,7 @@ const Results = (props) => {
             mainImage={property.mainImage}
             price={property.price}
             handleClick={props.handleClick}
-            category="result"
+            category={props.category}
           />
         );
       })}
@@ -23,7 +23,7 @@ const Results = (props) => {
   );
 };
 
-export default Results;
+export default PropertiesList;
 
 // implicit returns
 // pass down a full property prop, rather than each bit individually

@@ -1,10 +1,9 @@
 import "./App.css";
-import Results from "./components/Results";
-import SavedProperties from "./components/SavedProperties";
+import PropertiesList from "./components/PropertiesList";
 import { results, saved } from "./data.json";
 import { useState } from "react";
 
-function App() {
+const App = () => {
   const [savedProperties, setSavedProperties] = useState(saved);
 
   const handleClick = (propertyID) => {
@@ -27,21 +26,27 @@ function App() {
     }
   };
 
-  const data = { results, savedProperties };
-
   return (
     <div className="App">
-      <Results data={data.results} handleClick={handleClick} />
-      <SavedProperties data={data.savedProperties} handleClick={handleClick} />
+      <PropertiesList
+        title="Results"
+        category="results"
+        data={results}
+        handleClick={handleClick}
+      />
+      <PropertiesList
+        title="Saved Properties"
+        category="saved"
+        data={savedProperties}
+        handleClick={handleClick}
+      />
     </div>
   );
-}
+};
 
 export default App;
 
 // Jon's list of cool to dos because he loves you
 // rename your variables
 // break up the two responsibilities in that handleClick function
-// just pass down `results` and `newSaved` as props - don't construct new object
 // implicit return cos they are cool
-// make <Results /> and <SavedProperties /> the same component - pass down `title` and `category`

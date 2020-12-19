@@ -20,15 +20,8 @@ const Property = (props) => {
         logo={property.agency.logo}
       />
       <MainImage mainImage={property.mainImage} />
-      <div className={style.priceContainer}>
+      <div className={style.priceButtonContainer}>
         <Price price={property.price} />
-        {/* {showButton && (
-          <Button
-            handleClick={props.handleClick}
-            propertyId={property.id}
-            category={props.category}
-          />
-        )} */}
         <Button
           handleClick={props.handleClick}
           propertyId={property.id}

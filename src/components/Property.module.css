@@ -17,7 +17,7 @@
   transform: translateX(-2px) translateY(-2px);
 }
 
-.priceContainer {
+.priceButtonContainer {
   display: flex;
   flex-direction: row;
   align-items: center;

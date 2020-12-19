@@ -15,13 +15,16 @@ const App = () => {
       (property) => property.id === propertyID
     );
 
+    //check if this is ok?
     if ((clickedProperty = propertyInSaved)) {
       setSavedProperties(
         savedProperties.filter((property) => {
           return clickedProperty !== property;
         })
       );
-    } else if ((clickedProperty = propertyInResults)) {
+      // or should it be this?
+    } else if (propertyInResults) {
+      clickedProperty = propertyInResults;
       setSavedProperties([...savedProperties, clickedProperty]);
     }
   };

@@ -7,13 +7,13 @@ import { useState } from "react";
 
 const Property = (props) => {
   const { property } = props;
-  const [isShown, setIsShown] = useState(false);
+  const [showButton, setShowButton] = useState(false);
 
   return (
     <div
       className={style.propertyCard}
-      onMouseEnter={() => setIsShown(true)}
-      onMouseLeave={() => setIsShown(false)}
+      onMouseEnter={() => setShowButton(true)}
+      onMouseLeave={() => setShowButton(false)}
     >
       <Agency
         color={property.agency.brandingColors.primary}
@@ -22,7 +22,7 @@ const Property = (props) => {
       <MainImage mainImage={property.mainImage} />
       <div className={style.priceContainer}>
         <Price price={property.price} />
-        {isShown && (
+        {showButton && (
           <Button
             handleClick={props.handleClick}
             propertyId={property.id}

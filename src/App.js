@@ -47,6 +47,5 @@ const App = () => {
 export default App;
 
 // Jon's list of cool to dos because he loves you
-// rename your variables
-// break up the two responsibilities in that handleClick function
+// break up the two responsibilities in that handleClick function - semantic names
 // implicit return cos they are cool

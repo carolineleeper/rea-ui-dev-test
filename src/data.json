@@ -4,7 +4,7 @@
       "price": "$726,500",
       "agency": {
         "brandingColors": {
-          "realPrimary": "#ffe512",
+          "originalPrimary": "#ffe512",
           "primary": "#00477e"
         },
         "logo": "https://i1.au.reastatic.net/170x32/d9e65c666e427e655fb63dcfe73f50d4ac7ff9a58c173db9474bd92e75b01070/main.gif"
@@ -41,7 +41,8 @@
       "price": "$526,500",
       "agency": {
         "brandingColors": {
-          "primary": "#000000"
+          "originalPrimary": "#000000",
+          "primary": "#53b7b2"
         },
         "logo": "https://i2.au.reastatic.net/170x32/3015ba9710c7e3ddc2ac30f45fd7906df5b04e442a7f6948f75a6029b8b871e2/main.gif"
       },

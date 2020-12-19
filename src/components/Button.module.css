@@ -16,7 +16,7 @@
 
 .propertyButton:hover,
 .propertyButton:focus {
-  background: #0053ba;
+  background: rgb(43, 110, 210);
 }
 
 .propertyButton:focus {

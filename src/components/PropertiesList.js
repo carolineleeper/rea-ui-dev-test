@@ -8,12 +8,8 @@ const PropertiesList = (props) => {
       {props.data.map((property) => {
         return (
           <Property
+            property={property}
             key={property.id}
-            propertyId={property.id}
-            color={property.agency.brandingColors.primary}
-            agencyLogo={property.agency.logo}
-            mainImage={property.mainImage}
-            price={property.price}
             handleClick={props.handleClick}
             category={props.category}
           />
@@ -26,4 +22,3 @@ const PropertiesList = (props) => {
 export default PropertiesList;
 
 // implicit returns
-// pass down a full property prop, rather than each bit individually

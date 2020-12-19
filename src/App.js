@@ -5,7 +5,6 @@ import { useState } from "react";
 
 const App = () => {
   const [savedProperties, setSavedProperties] = useState(saved);
-  let clickedProperty = null;
 
   const handleClick = (propertyID) => {
     const propertyInSaved = savedProperties.find(
@@ -15,16 +14,15 @@ const App = () => {
       (property) => property.id === propertyID
     );
 
-    //check if this is ok?
-    if ((clickedProperty = propertyInSaved)) {
+    if (propertyInSaved) {
+      const clickedProperty = propertyInSaved;
+
       setSavedProperties(
-        savedProperties.filter((property) => {
-          return clickedProperty !== property;
-        })
+        savedProperties.filter((property) => clickedProperty !== property)
       );
-      // or should it be this?
     } else if (propertyInResults) {
-      clickedProperty = propertyInResults;
+      const clickedProperty = propertyInResults;
+
       setSavedProperties([...savedProperties, clickedProperty]);
     }
   };
@@ -50,5 +48,5 @@ const App = () => {
 export default App;
 
 // Jon's list of cool to dos because he loves you
-// break up the two responsibilities in that handleClick function - semantic names
+// break up the two responsibilities in that handleClick function???
 // implicit return cos they are cool

@@ -5,16 +5,16 @@ import { results, saved } from "./data.json";
 import { useState } from "react";
 
 function App() {
-  const [newSaved, setNewSaved] = useState(saved);
+  const [savedProperties, setSavedProperties] = useState(saved);
 
   const handleClick = (propertyID) => {
-    if (newSaved.find((property) => property.id === propertyID)) {
-      const clickedProperty = newSaved.find(
+    if (savedProperties.find((property) => property.id === propertyID)) {
+      const clickedProperty = savedProperties.find(
         (property) => property.id === propertyID
       );
 
-      setNewSaved(
-        newSaved.filter((property) => {
+      setSavedProperties(
+        savedProperties.filter((property) => {
           return clickedProperty !== property;
         })
       );
@@ -23,16 +23,16 @@ function App() {
         (property) => property.id === propertyID
       );
 
-      setNewSaved([...newSaved, clickedProperty]);
+      setSavedProperties([...savedProperties, clickedProperty]);
     }
   };
 
-  const data = { results, newSaved };
+  const data = { results, savedProperties };
 
   return (
     <div className="App">
       <Results data={data.results} handleClick={handleClick} />
-      <SavedProperties data={data.newSaved} handleClick={handleClick} />
+      <SavedProperties data={data.savedProperties} handleClick={handleClick} />
     </div>
   );
 }

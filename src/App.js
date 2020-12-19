@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const App = () => {
   const [savedProperties, setSavedProperties] = useState(saved);
+  const [resultProperties, setResultProperties] = useState(results);
 
   const handleClick = (propertyID) => {
     const propertyInSaved = savedProperties.find(
@@ -32,7 +33,7 @@ const App = () => {
       <PropertiesList
         title="Results"
         category="results"
-        data={results}
+        data={resultProperties}
         handleClick={handleClick}
       />
       <PropertiesList

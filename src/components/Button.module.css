@@ -13,13 +13,22 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-
 .propertyButton:hover,
 .propertyButton:focus {
   background: rgb(43, 110, 210);
 }
-
 .propertyButton:focus {
   outline: 1px solid #fff;
   outline-offset: -4px;
+}
+
+.propertyButton:disabled {
+  background-color: #acacac;
+  color: #757575;
+  cursor: not-allowed;
+}
+.propertyButton:disabled:hover {
+  background-color: #acacac;
+  color: #757575;
+  cursor: not-allowed;
 }

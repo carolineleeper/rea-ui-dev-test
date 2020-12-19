@@ -5,23 +5,23 @@ import { useState } from "react";
 
 const App = () => {
   const [savedProperties, setSavedProperties] = useState(saved);
+  let clickedProperty = null;
 
   const handleClick = (propertyID) => {
-    if (savedProperties.find((property) => property.id === propertyID)) {
-      const clickedProperty = savedProperties.find(
-        (property) => property.id === propertyID
-      );
+    const propertyInSaved = savedProperties.find(
+      (property) => property.id === propertyID
+    );
+    const propertyInResults = results.find(
+      (property) => property.id === propertyID
+    );
 
+    if ((clickedProperty = propertyInSaved)) {
       setSavedProperties(
         savedProperties.filter((property) => {
           return clickedProperty !== property;
         })
       );
-    } else if (results.find((property) => property.id === propertyID)) {
-      const clickedProperty = results.find(
-        (property) => property.id === propertyID
-      );
-
+    } else if ((clickedProperty = propertyInResults)) {
       setSavedProperties([...savedProperties, clickedProperty]);
     }
   };

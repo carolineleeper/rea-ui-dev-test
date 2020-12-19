@@ -16,3 +16,11 @@
   box-shadow: 0px 5px 20px 2px #757575;
   transform: translateX(-2px) translateY(-2px);
 }
+
+.priceContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}

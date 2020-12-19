@@ -1,9 +1,9 @@
-import style from "./AddButton.module.css";
+import style from "./Button.module.css";
 
-const AddButton = (props) => {
+const Button = (props) => {
   return (
     <button
-      className={style.addButton}
+      className={style.propertyButton}
       onClick={() => props.handleClick(props.propertyId)}
     >
       {props.category === "saved" ? "Remove Property" : "Add Property"}
@@ -11,4 +11,4 @@ const AddButton = (props) => {
   );
 };
 
-export default AddButton;
+export default Button;

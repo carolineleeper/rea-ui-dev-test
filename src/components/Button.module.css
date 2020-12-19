@@ -1,4 +1,4 @@
-.addButton {
+.propertyButton {
   display: inline-block;
   border: none;
   padding: 1rem 2rem;
@@ -14,12 +14,12 @@
   -moz-appearance: none;
 }
 
-.addButton:hover,
-.addButton:focus {
+.propertyButton:hover,
+.propertyButton:focus {
   background: #0053ba;
 }
 
-.addButton:focus {
+.propertyButton:focus {
   outline: 1px solid #fff;
   outline-offset: -4px;
 }

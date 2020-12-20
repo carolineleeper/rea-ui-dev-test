@@ -23,10 +23,11 @@ const Property = (props) => {
       <div className={style.priceButtonContainer}>
         <Price price={property.price} />
         <Button
-          handleClick={props.handleClick}
+          toggleSaveProperty={props.toggleSaveProperty}
           propertyId={property.id}
           category={props.category}
           showButton={showButton}
+          savedPropertiesIds={props.savedPropertiesIds}
         />
       </div>
     </div>
@@ -34,5 +35,3 @@ const Property = (props) => {
 };
 
 export default Property;
-
-// multiple levels over and over again is bad

@@ -5,9 +5,8 @@ import { useState } from "react";
 
 const App = () => {
   const [savedProperties, setSavedProperties] = useState(saved);
-  const [resultProperties, setResultProperties] = useState(results);
 
-  const handleClick = (propertyID) => {
+  const toggleSaveProperty = (propertyID) => {
     const propertyInSaved = savedProperties.find(
       (property) => property.id === propertyID
     );
@@ -28,26 +27,26 @@ const App = () => {
     }
   };
 
+  const savedPropertiesIds = savedProperties.map((property) => property.id);
+
   return (
     <div className="App">
       <PropertiesList
         title="Results"
         category="results"
-        data={resultProperties}
-        handleClick={handleClick}
+        data={results}
+        toggleSaveProperty={toggleSaveProperty}
+        savedPropertiesIds={savedPropertiesIds}
       />
       <PropertiesList
         title="Saved Properties"
         category="saved"
         data={savedProperties}
-        handleClick={handleClick}
+        toggleSaveProperty={toggleSaveProperty}
+        savedPropertiesIds={savedPropertiesIds}
       />
     </div>
   );
 };
 
 export default App;
-
-// Jon's list of cool to dos because he loves you
-// break up the two responsibilities in that handleClick function???
-// implicit return cos they are cool

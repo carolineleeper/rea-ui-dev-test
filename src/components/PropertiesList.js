@@ -10,8 +10,9 @@ const PropertiesList = (props) => {
           <Property
             property={property}
             key={property.id}
-            handleClick={props.handleClick}
+            toggleSaveProperty={props.toggleSaveProperty}
             category={props.category}
+            savedPropertiesIds={props.savedPropertiesIds}
           />
         );
       })}

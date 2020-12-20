@@ -18,7 +18,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  animation: fadein 5s ease-in-out;
+  animation: fadeIn 5s ease-in-out;
 }
 .propertyButton:hover,
 .propertyButton:focus {
@@ -40,7 +40,7 @@
   cursor: not-allowed;
 }
 
-@keyframes fadein {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }

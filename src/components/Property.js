@@ -14,6 +14,7 @@ const Property = (props) => {
       className={style.propertyCard}
       onMouseEnter={() => setShowButton(true)}
       onMouseLeave={() => setShowButton(false)}
+      data-testid={props.category}
     >
       <Agency
         color={property.agency.brandingColors.primary}

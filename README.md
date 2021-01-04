@@ -1,4 +1,18 @@
-# Getting Started with Create React App
+# REA UI Developer Test
+
+> Caroline's submission for the REA UI Developer position.
+
+<img src="https://media.giphy.com/media/7aZdLNX7mN8dRTbQ0H/giphy.gif" width="300">
+
+A simple React App for listing and saving property searches.
+
+## Installation
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+1.
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +81,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

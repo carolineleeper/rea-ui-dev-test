@@ -18,7 +18,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. Start the dev server
    `npm start`
 
+This will open the app in browser at http://localhost:3000/
+
+### Tests
+
+To run development tests `npm test`
+
 ## Features
 
-- Displays a list of properties
-- On hovering
+- Displays a list of properties based on provided data
+- hovering over a property displays an add/remove button
+- clicking the button toggles the property in the saved properties list
+
+## Notes
+
+- the primary branding colour for properties 1 & 4 have been updated to match the agency logo

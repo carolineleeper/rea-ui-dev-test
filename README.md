@@ -1,6 +1,6 @@
 # REA UI Developer Test
 
-> A simple React App for listing and saving property searches.
+> A simple React App for listing and saving property searches.  
 > Caroline's submission for the REA UI Developer position.
 
 <img src="https://media.giphy.com/media/7aZdLNX7mN8dRTbQ0H/giphy.gif" width="500">

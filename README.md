@@ -13,9 +13,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1. Clone the repo
    `https://github.com/carolineleeper/rea-ui-dev-test.git`
-2. Install dependencies
+2. Navigate to project directory
+   `cd rea-ui-dev-test`
+3. Install dependencies
    `npm install`
-3. Start the dev server
+4. Start the dev server
    `npm start`
 
 This will open the app in browser at http://localhost:3000/

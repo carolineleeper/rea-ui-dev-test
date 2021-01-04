@@ -2,15 +2,22 @@
 
 > Caroline's submission for the REA UI Developer position.
 
-<img src="https://media.giphy.com/media/7aZdLNX7mN8dRTbQ0H/giphy.gif" width="300">
+<img src="https://media.giphy.com/media/7aZdLNX7mN8dRTbQ0H/giphy.gif" width="400">
 
 A simple React App for listing and saving property searches.
 
-## Installation
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1.
+In command line:
+
+1. Clone the repo
+   `https://github.com/carolineleeper/rea-ui-dev-test.git`
+2. Install dependencies
+   `npm install`
+3. Start the dev server
+   `npm start`
 
 <!-- # Getting Started with Create React App
 

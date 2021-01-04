@@ -3,7 +3,7 @@
 > A simple React App for listing and saving property searches.
 > Caroline's submission for the REA UI Developer position.
 
-<img src="https://media.giphy.com/media/7aZdLNX7mN8dRTbQ0H/giphy.gif" width="400">
+<img src="https://media.giphy.com/media/7aZdLNX7mN8dRTbQ0H/giphy.gif" width="500">
 
 ## Getting Started
 
@@ -19,3 +19,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
    `npm start`
 
 ## Features
+
+- Displays a list of properties
+- On hovering
